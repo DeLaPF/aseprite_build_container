@@ -1,4 +1,5 @@
 # Aseprite Build Container
+## (Currently windows only, but could extend to linux and macos in similar fashion)
 Run:
 - `docker build . -t delapf/aseprite_builder:latest`
 - `docker compose -up -d`
