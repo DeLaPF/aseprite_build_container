@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  aseprite_builder:
+    # build: .
+    image: delapf/aseprite_builder:latest
+    container_name: aseprite_build_container
+    volumes:
+      - .\out:C:\target
+      - .\scripts:C:\scripts
+    entrypoint: cmd /c scripts\\build.bat
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
